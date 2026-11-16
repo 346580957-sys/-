@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>华曼棠慢病智库 · 让慢病管理成为可以被理解的事</title>
+  <meta name="description" content="华曼棠慢病智库，以循证医学为底，汇聚三甲医院临床专家与真实世界研究，为长期用药的家庭提供看得懂、做得到、跟得住的慢病管理方案。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23112a22'/%3E%3Cg fill='none' stroke='%239db49c' stroke-width='1.1'%3E%3Cpath d='M16 3c4.4 4.2 4.4 9.8 0 13-4.4-3.2-4.4-8.8 0-13Z'/%3E%3Cpath d='M29 16c-4.2 4.4-9.8 4.4-13 0 3.2-4.4 8.8-4.4 13 0Z'/%3E%3Cpath d='M16 29c-4.4-4.2-4.4-9.8 0-13 4.4 3.2 4.4 8.8 0 13Z'/%3E%3Cpath d='M3 16c4.2-4.4 9.8-4.4 13 0-3.2 4.4-8.8 4.4-13 0Z'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='1.6' fill='%239db49c'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="华曼棠慢病智库首页">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3c4.4 4.2 4.4 9.8 0 13-4.4-3.2-4.4-8.8 0-13Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M29 16c-4.2 4.4-9.8 4.4-13 0 3.2-4.4 8.8-4.4 13 0Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M16 29c-4.4-4.2-4.4-9.8 0-13 4.4 3.2 4.4 8.8 0 13Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M3 16c4.2-4.4 9.8-4.4 13 0-3.2 4.4-8.8 4.4-13 0Z" stroke="currentColor" stroke-width="1.1"/>
+          <circle cx="16" cy="16" r="1.6" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">华曼棠</span>
+        <span class="brand-sub">慢病智库</span>
+      </a>
+
+      <nav class="nav" aria-label="主导航">
+        <a href="#system">智库体系</a>
+        <a href="#method">方法</a>
+        <a href="#library">知识库</a>
+        <a href="#experts">专家网络</a>
+        <a href="#journal">研究洞察</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline btn-small" data-booking>预约咨询</button>
+        <button class="menu-btn" id="menu-btn" aria-label="打开菜单" aria-expanded="false" aria-controls="menu-drawer">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-drawer" id="menu-drawer" aria-hidden="true">
+    <div class="container drawer-head">
+      <span class="brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3c4.4 4.2 4.4 9.8 0 13-4.4-3.2-4.4-8.8 0-13Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M29 16c-4.2 4.4-9.8 4.4-13 0 3.2-4.4 8.8-4.4 13 0Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M16 29c-4.4-4.2-4.4-9.8 0-13 4.4 3.2 4.4 8.8 0 13Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M3 16c4.2-4.4 9.8-4.4 13 0-3.2 4.4-8.8 4.4-13 0Z" stroke="currentColor" stroke-width="1.1"/>
+          <circle cx="16" cy="16" r="1.6" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">华曼棠</span>
+      </span>
+      <button class="drawer-close" id="drawer-close" aria-label="关闭菜单">关闭</button>
+    </div>
+    <nav class="drawer-nav container" aria-label="移动端导航">
+      <a href="#system">智库体系</a>
+      <a href="#method">方法</a>
+      <a href="#library">知识库</a>
+      <a href="#experts">专家网络</a>
+      <a href="#journal">研究洞察</a>
+    </nav>
+    <div class="container drawer-foot">
+      <button class="btn btn-bone" data-booking>预约健康顾问</button>
+      <p>上海 · 静安区南京西路 1266 号<br />400-820-1936</p>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-media">
+        <img src="assets/img/hero.jpg" alt="晨光中的中药材与茶，安静的桌面静物摄影" fetchpriority="high" />
+      </div>
+
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">
+          <span>华曼棠慢病智库</span>
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-en">HUAMANTANG INSTITUTE · SINCE 2013</span>
+        </p>
+        <h1 class="hero-title">
+          <span class="line"><span style="--d:.15s">让慢病管理，</span></span>
+          <span class="line"><span style="--d:.28s">成为一件可以</span></span>
+          <span class="line"><span style="--d:.41s">被理解的事。</span></span>
+        </h1>
+        <p class="hero-lead">
+          以循证医学为底，汇聚三甲临床专家与真实世界数据，为每一个长期用药的家庭，提供看得懂、做得到、跟得住的健康方案。
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-bone" data-booking>预约健康顾问<span class="btn-arrow">→</span></button>
+          <a class="btn btn-ghost" href="#library">浏览知识库</a>
+        </div>
+        <div class="hero-meta">
+          <span>2013 年创立</span>
+          <span>217 位三甲专家</span>
+          <span>覆盖 31 省</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>SCROLL</span>
+        <i></i>
+      </div>
+
+      <div class="hero-ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>糖尿病</span><span>高血压</span><span>血脂异常</span><span>高尿酸血症</span><span>脂肪肝</span><span>甲状腺结节</span><span>睡眠与情绪</span><span>体重管理</span><span>用药安全</span>
+          <span>糖尿病</span><span>高血压</span><span>血脂异常</span><span>高尿酸血症</span><span>脂肪肝</span><span>甲状腺结节</span><span>睡眠与情绪</span><span>体重管理</span><span>用药安全</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof -->
+    <section class="proof">
+      <div class="container">
+        <div class="proof-head">
+          <div>
+            <p class="kicker" data-reveal>以证据为底 / EVIDENCE FIRST</p>
+            <h2 class="section-title" data-reveal>慢病是一场长跑，<br />每一步都有据可依。</h2>
+          </div>
+          <p class="proof-note" data-reveal>
+            十二年，我们只做一件事：把循证医学里冷峻的结论，翻译成普通家庭可以执行的语言。不夸大，不省略，也不替你做决定。
+          </p>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat" data-reveal>
+            <div class="stat-num"><span data-count="38.6" data-decimals="1">0</span><span class="suffix">万+</span></div>
+            <p class="stat-label">正在被管理的家庭</p>
+          </div>
+          <div class="stat" data-reveal style="transition-delay:.08s">
+            <div class="stat-num"><span data-count="217" data-decimals="0">0</span><span class="suffix">位</span></div>
+            <p class="stat-label">参与审校的临床专家</p>
+          </div>
+          <div class="stat" data-reveal style="transition-delay:.16s">
+            <div class="stat-num"><span data-count="31" data-decimals="0">0</span><span class="suffix">省</span></div>
+            <p class="stat-label">服务覆盖范围</p>
+          </div>
+          <div class="stat" data-reveal style="transition-delay:.24s">
+            <div class="stat-num"><span data-count="12" data-decimals="0">0</span><span class="suffix">年</span></div>
+            <p class="stat-label">循证研究积累</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- System -->
+    <section class="system" id="system">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-reveal>01 / 智库体系</p>
+            <h2 class="section-title" data-reveal>知识、专家与工具，<br />互为校验。</h2>
+          </div>
+          <p class="section-desc" data-reveal>
+            智库不是资料的堆积。知识库提供依据，专家网络负责判断，陪伴工具把它落到每一天——三者交叉，才构成一个可以被信任的答案。
+          </p>
+        </div>
+
+        <div class="system-rows">
+          <a class="system-row has-preview" href="#library" data-preview="assets/img/herbs.jpg" data-reveal>
+            <span class="sr-index">01</span>
+            <div class="sr-body">
+              <h3>知识库</h3>
+              <p>结构化的慢病知识图谱，每一条结论都标注指南来源、证据等级与适用人群。</p>
+            </div>
+            <span class="sr-meta">KNOWLEDGE</span>
+            <span class="sr-arrow">→</span>
+          </a>
+
+          <a class="system-row has-preview" href="#experts" data-preview="assets/img/consult.jpg" data-reveal style="transition-delay:.08s">
+            <span class="sr-index">02</span>
+            <div class="sr-body">
+              <h3>专家网络</h3>
+              <p>内分泌、心血管、肾内、营养与心理五个学科，217 位临床专家参与内容审校与个案会诊。</p>
+            </div>
+            <span class="sr-meta">NETWORK</span>
+            <span class="sr-arrow">→</span>
+          </a>
+
+          <a class="system-row has-preview" href="#method" data-preview="assets/img/clinic.jpg" data-reveal style="transition-delay:.16s">
+            <span class="sr-index">03</span>
+            <div class="sr-body">
+              <h3>陪伴工具</h3>
+              <p>把用药、饮食、监测与复诊，翻译成每天三分钟就能完成的具体动作。</p>
+            </div>
+            <span class="sr-meta">TOOLS</span>
+            <span class="sr-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Narrative -->
+    <section class="narrative" id="method">
+      <div class="container">
+        <div class="narrative-head">
+          <div>
+            <p class="kicker" data-reveal>02 / 智库方法</p>
+            <h2 class="section-title" data-reveal>把指南，<br />翻译成日常。</h2>
+          </div>
+          <p class="section-desc" data-reveal>
+            指南写给医生，生活属于患者。我们站在两者之间，做那道并不容易的翻译：让复杂的医学，成为可以坚持的日常。
+          </p>
+        </div>
+
+        <div class="narrative-body">
+          <div class="narrative-visual" aria-hidden="true">
+            <div class="nv-frames">
+              <img class="is-active" src="assets/img/herbs.jpg" alt="整理中药材的双手" loading="lazy" />
+              <img src="assets/img/clinic.jpg" alt="安静明亮的现代诊室一角" loading="lazy" />
+              <img src="assets/img/consult.jpg" alt="医生与患者沟通的温和场景" loading="lazy" />
+            </div>
+            <div class="nv-caption">
+              <span class="nv-num">01</span>
+              <span class="nv-label">读懂指标</span>
+            </div>
+          </div>
+
+          <div class="narrative-steps">
+            <article class="n-step is-active" data-step="0">
+              <span class="n-step-index">01 / 读懂指标</span>
+              <h3>读懂指标</h3>
+              <p>上传体检单或连续监测数据，系统识别关键箭头，并用一段人话解释它意味着什么，可能与你最近的哪些习惯有关。</p>
+              <ul>
+                <li>血糖、血压与血脂的长期趋势</li>
+                <li>肝肾功能与用药安全性提示</li>
+                <li>异常值对应的下一步建议</li>
+              </ul>
+              <img class="n-step-img" src="assets/img/herbs.jpg" alt="整理中药材的双手" loading="lazy" />
+            </article>
+
+            <article class="n-step" data-step="1">
+              <span class="n-step-index">02 / 排好一日</span>
+              <h3>排好一日</h3>
+              <p>把饮食、用药与运动安排进真实的一日三餐，而不是一张难以执行的清单。能坚持的方案，才是有效的方案。</p>
+              <ul>
+                <li>一周食谱与对应的采购清单</li>
+                <li>用药时间、餐前餐后与相互作用</li>
+                <li>适合当前体能的运动强度</li>
+              </ul>
+              <img class="n-step-img" src="assets/img/clinic.jpg" alt="安静明亮的现代诊室一角" loading="lazy" />
+            </article>
+
+            <article class="n-step" data-step="2">
+              <span class="n-step-index">03 / 看见变化</span>
+              <h3>看见变化</h3>
+              <p>每一次记录都会汇入长期趋势，帮助医生在复诊时看到完整的故事，而不只是一个孤立的数字。</p>
+              <ul>
+                <li>指标趋势周报与月度回顾</li>
+                <li>复诊前自动生成的一页摘要</li>
+                <li>需要转诊时，给出明确的科室建议</li>
+              </ul>
+              <img class="n-step-img" src="assets/img/consult.jpg" alt="医生与患者沟通的温和场景" loading="lazy" />
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Library -->
+    <section class="library" id="library">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker on-dark" data-reveal>03 / 知识库</p>
+            <h2 class="section-title" data-reveal>按你关心的问题，<br />找到答案。</h2>
+          </div>
+          <p class="section-desc" data-reveal>
+            不从头读一本教科书。从此刻最困扰你的那一个指标开始，每一篇都经学术委员会双周审校。
+          </p>
+        </div>
+
+        <div class="topic-list">
+          <a class="topic-row has-preview" href="#library" data-preview="assets/img/topic-diabetes.jpg" data-reveal>
+            <span class="t-index">01</span>
+            <span class="t-name">糖尿病</span>
+            <span class="t-count">128 篇</span>
+            <span class="t-arrow">↗</span>
+          </a>
+          <a class="topic-row has-preview" href="#library" data-preview="assets/img/topic-bp.jpg" data-reveal style="transition-delay:.06s">
+            <span class="t-index">02</span>
+            <span class="t-name">高血压</span>
+            <span class="t-count">96 篇</span>
+            <span class="t-arrow">↗</span>
+          </a>
+          <a class="topic-row has-preview" href="#library" data-preview="assets/img/topic-lipid.jpg" data-reveal style="transition-delay:.12s">
+            <span class="t-index">03</span>
+            <span class="t-name">血脂异常</span>
+            <span class="t-count">74 篇</span>
+            <span class="t-arrow">↗</span>
+          </a>
+          <a class="topic-row has-preview" href="#library" data-preview="assets/img/topic-gout.jpg" data-reveal>
+            <span class="t-index">04</span>
+            <span class="t-name">高尿酸与痛风</span>
+            <span class="t-count">63 篇</span>
+            <span class="t-arrow">↗</span>
+          </a>
+          <a class="topic-row has-preview" href="#library" data-preview="assets/img/herbs.jpg" data-reveal style="transition-delay:.06s">
+            <span class="t-index">05</span>
+            <span class="t-name">脂肪肝</span>
+            <span class="t-count">58 篇</span>
+            <span class="t-arrow">↗</span>
+          </a>
+          <a class="topic-row has-preview" href="#library" data-preview="assets/img/topic-sleep.jpg" data-reveal style="transition-delay:.12s">
+            <span class="t-index">06</span>
+            <span class="t-name">睡眠与情绪</span>
+            <span class="t-count">82 篇</span>
+            <span class="t-arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="library-foot" data-reveal>
+          <a class="text-link-light" href="#library">浏览全部 501 篇知识条目 <span>→</span></a>
+          <span>所有内容标注证据等级 · 双周复核</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experts -->
+    <section class="experts" id="experts">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-reveal>04 / 专家网络</p>
+            <h2 class="section-title" data-reveal>写下结论的人，<br />也要为结论负责。</h2>
+          </div>
+          <p class="section-desc" data-reveal>
+            内容署名，观点可溯。每一位专家的判断，都以真名出现在页面上；每一篇内容，至少经过三位临床专家交叉审校。
+          </p>
+        </div>
+
+        <div class="expert-grid">
+          <figure class="expert" data-reveal>
+            <div class="expert-img">
+              <img src="assets/img/expert1.jpg" alt="林叙白医生肖像" loading="lazy" />
+            </div>
+            <figcaption>
+              <strong>林叙白</strong>
+              <span>内分泌科 · 主任医师</span>
+              <span class="expert-tag">学术委员会召集人</span>
+            </figcaption>
+          </figure>
+
+          <figure class="expert" data-reveal style="transition-delay:.1s">
+            <div class="expert-img">
+              <img src="assets/img/expert2.jpg" alt="顾清和医生肖像" loading="lazy" />
+            </div>
+            <figcaption>
+              <strong>顾清和</strong>
+              <span>心血管内科 · 主任医师</span>
+              <span class="expert-tag">指南审校组</span>
+            </figcaption>
+          </figure>
+
+          <figure class="expert" data-reveal style="transition-delay:.2s">
+            <div class="expert-img">
+              <img src="assets/img/expert3.jpg" alt="周屿营养师肖像" loading="lazy" />
+            </div>
+            <figcaption>
+              <strong>周 屿</strong>
+              <span>临床营养科 · 注册营养师</span>
+              <span class="expert-tag">生活方式干预组</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="experts-foot" data-reveal>
+          <a class="text-link" href="#experts">查看全部 217 位专家 <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote">
+      <div class="container quote-grid">
+        <div data-reveal>
+          <p class="quote-mark" aria-hidden="true">“</p>
+          <blockquote>我们不替患者做决定，<br />我们让决定，变得有依据。</blockquote>
+          <p class="quote-cite">林叙白 · 学术委员会召集人</p>
+        </div>
+        <div class="quote-side" data-reveal style="transition-delay:.12s">
+          <p>
+            我们不使用“根治”“告别”这样的词。慢病管理的真相是长期、反复与不确定。我们相信，克制比煽动更接近医学。
+          </p>
+          <div class="quote-facts">
+            <div><strong>3 位</strong><span>专家交叉审校</span></div>
+            <div><strong>14 天</strong><span>内容复核周期</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal -->
+    <section class="journal" id="journal">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-reveal>05 / 研究洞察</p>
+            <h2 class="section-title" data-reveal>值得被认真读完的更新。</h2>
+          </div>
+          <p class="section-desc" data-reveal>
+            指南更新、真实世界研究与临床观察，双周整理一次。只留下会对日常决策产生影响的改变。
+          </p>
+        </div>
+
+        <div class="journal-list">
+          <a class="journal-row" href="#journal" data-reveal>
+            <span class="j-date">2026.10</span>
+            <span class="j-cat">指南解读</span>
+            <span class="j-title">《中国 2 型糖尿病防治指南》2026 年更新：五个与日常最相关的改变</span>
+            <span class="j-arrow">↗</span>
+          </a>
+          <a class="journal-row" href="#journal" data-reveal style="transition-delay:.06s">
+            <span class="j-date">2026.09</span>
+            <span class="j-cat">真实世界</span>
+            <span class="j-title">连续血糖监测进入家庭之后，我们重新理解了“达标”这件事</span>
+            <span class="j-arrow">↗</span>
+          </a>
+          <a class="journal-row" href="#journal" data-reveal style="transition-delay:.12s">
+            <span class="j-date">2026.08</span>
+            <span class="j-cat">临床营养</span>
+            <span class="j-title">减盐不是少放一勺盐：一份关于钠来源的清单，以及三个常见误区</span>
+            <span class="j-arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="journal-foot" data-reveal>
+          <a class="text-link" href="#journal">查看全部研究洞察 <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="cta-ring" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <p class="kicker" data-reveal>开始 / BEGIN</p>
+        <h2 data-reveal>从今天开始，<br />理解你的身体。</h2>
+        <p data-reveal>把复杂的医学交给专业，把确定的生活留给自己。一次三十分钟的问询，从读懂你的指标开始。</p>
+        <div class="cta-actions" data-reveal>
+          <button class="btn btn-ink" data-booking>预约健康顾问<span class="btn-arrow">→</span></button>
+          <a class="btn btn-ghost-dark" href="#library">先逛逛知识库</a>
+        </div>
+        <p class="cta-note" data-reveal>健康顾问将在 24 小时内与你联系 · 不推销，不打扰</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="#top" aria-label="返回首页">
+            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 3c4.4 4.2 4.4 9.8 0 13-4.4-3.2-4.4-8.8 0-13Z" stroke="currentColor" stroke-width="1.1"/>
+              <path d="M29 16c-4.2 4.4-9.8 4.4-13 0 3.2-4.4 8.8-4.4 13 0Z" stroke="currentColor" stroke-width="1.1"/>
+              <path d="M16 29c-4.4-4.2-4.4-9.8 0-13 4.4 3.2 4.4 8.8 0 13Z" stroke="currentColor" stroke-width="1.1"/>
+              <path d="M3 16c4.2-4.4 9.8-4.4 13 0-3.2 4.4-8.8 4.4-13 0Z" stroke="currentColor" stroke-width="1.1"/>
+              <circle cx="16" cy="16" r="1.6" fill="currentColor"/>
+            </svg>
+            <span class="brand-name">华曼棠</span>
+            <span class="brand-sub">慢病智库</span>
+          </a>
+          <p class="footer-tag">以循证医学为底，陪伴中国家庭完成漫长的慢病管理。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>智库</h4>
+          <a href="#system">智库体系</a>
+          <a href="#library">知识库</a>
+          <a href="#experts">专家网络</a>
+          <a href="#journal">研究洞察</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>服务</h4>
+          <a href="#contact">健康评估</a>
+          <a href="#contact">方案定制</a>
+          <a href="#contact">个案会诊</a>
+          <a href="#contact">企业健康</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>联系</h4>
+          <p>400-820-1936</p>
+          <p>hello@huamantang.cn</p>
+          <p>上海 · 静安区南京西路 1266 号</p>
+          <p>周一至周日 9:00 — 20:00</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>本网站内容仅供健康科普与研究交流参考，不能替代医生的诊断与处方。如有急性症状，请及时前往医院就诊。</p>
+        <span>© 2026 华曼棠慢病智库</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating image preview -->
+  <div class="float-preview" aria-hidden="true"><img alt="" /></div>
+
+  <!-- Booking dialog -->
+  <dialog class="booking" id="booking">
+    <button class="booking-close" id="booking-close" aria-label="关闭">✕</button>
+    <div class="booking-body">
+      <p class="kicker">预约咨询</p>
+      <h3>留下联系方式</h3>
+      <p class="booking-lead">健康顾问将在 24 小时内与你联系。请放心，我们不会将你的信息用于任何营销用途。</p>
+
+      <form id="booking-form" novalidate>
+        <label for="name">怎么称呼</label>
+        <input id="name" name="name" type="text" placeholder="例如：陈女士" required />
+
+        <label for="phone">手机号码</label>
+        <input id="phone" name="phone" type="tel" inputmode="numeric" placeholder="用于回电，仅限本人" pattern="[0-9]{11}" required />
+
+        <label for="focus">想了解的方向</label>
+        <select id="focus" name="focus">
+          <option>血糖管理</option>
+          <option>血压管理</option>
+          <option>血脂与体重</option>
+          <option>用药与复查</option>
+          <option>还不确定，想先聊聊</option>
+        </select>
+
+        <button type="submit" class="btn btn-ink">提交预约<span class="btn-arrow">→</span></button>
+        <p class="booking-error" id="booking-error" role="alert"></p>
+      </form>
+
+      <div class="booking-success" id="booking-success" hidden>
+        <p class="success-mark" aria-hidden="true">✓</p>
+        <h4>已收到你的预约</h4>
+        <p>健康顾问将在 24 小时内与你联系，请留意本地来电。</p>
+        <button class="btn btn-ink" id="booking-done">好的</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
