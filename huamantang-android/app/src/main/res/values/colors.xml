@@ -1,0 +1,15 @@
+<resources>
+    <color name="ink">#15352B</color>
+    <color name="ink_deep">#0E251E</color>
+    <color name="jade">#456C56</color>
+    <color name="jade_dark">#34513F</color>
+    <color name="sage">#A7B8A3</color>
+    <color name="sage_light">#E2E8DC</color>
+    <color name="bone">#F5F1E8</color>
+    <color name="paper">#FCFAF5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="muted">#6E7770</color>
+    <color name="line">#2415352B</color>
+    <color name="terracotta">#9B6048</color>
+    <color name="nav_item_tint">#6E7770</color>
+</resources>

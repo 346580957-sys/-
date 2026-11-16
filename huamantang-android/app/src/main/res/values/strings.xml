@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">华曼棠</string>
+    <string name="app_full_name">华曼棠慢病智库</string>
+    <string name="nav_home">今日</string>
+    <string name="nav_library">智库</string>
+    <string name="nav_records">记录</string>
+    <string name="nav_profile">我的</string>
+    <string name="health_disclaimer">本应用内容仅用于健康科普与自我记录，不构成诊断或治疗建议。如有不适，请及时就医。</string>
+</resources>

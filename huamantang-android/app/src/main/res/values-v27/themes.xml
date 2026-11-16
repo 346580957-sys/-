@@ -1,0 +1,17 @@
+<resources>
+    <style name="Theme.Huamantang" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/jade</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/paper</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="colorSurfaceVariant">@color/sage_light</item>
+        <item name="colorOnSurfaceVariant">@color/ink</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/bone</item>
+        <item name="android:statusBarColor">@color/bone</item>
+        <item name="android:navigationBarColor">@color/paper</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>
